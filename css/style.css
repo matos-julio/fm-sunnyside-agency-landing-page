@@ -3,6 +3,68 @@ font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif;
 */
 
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
-  background-color: #1d1d1d;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1.125rem;
+}
+
+/* variables */
+:root {
+  --clr-primary-red: hsl(7, 99%, 70%);
+  --clr-primary-yellow: hsl(51, 100%, 49%);
+  --clr-primary-blue: hsl(198, 62%, 26%);
+  --clr-primary-dark-cyan: hsl(167, 40%, 24%);
+  --clr-primary-moderate-cyan: hsl(168, 34%, 41%);
+
+  --clr-neutral-dark-blue: hsl(212, 27%, 19%);
+  --clr-neutral-grayish-blue-d: hsl(213, 9%, 39%);
+  --clr-neutral-grayish-blue: hsl(210, 4%, 67%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-fraunces: "Fraunces", serif;
+
+  --fw-normal: 600;
+  --fw-bold: 700;
+  --fw-dark: 900;
 }
