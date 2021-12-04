@@ -50,8 +50,6 @@ img {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  font-size: 1.125rem;
 }
 
 /* 02 - variables */
@@ -77,6 +75,8 @@ body {
 
 /* 03 - Typography */
 body {
+  font-size: 1.125rem;
+  line-height: 1.5;
   font-family: var(--ff-barlow);
   text-align: center;
   color: var(--clr-neutral-grayish-blue-d);
@@ -86,6 +86,7 @@ body {
 .title,
 .testimonial__name {
   font-family: var(--ff-fraunces);
+  font-weight: var(--fw-dark);
 }
 
 .menu__btn {
@@ -112,6 +113,7 @@ body {
   font-size: 2rem;
 }
 
+/* Call to action buttons */
 .content__item__cta {
   position: relative;
   font-family: var(--ff-fraunces);
@@ -134,6 +136,36 @@ body {
   background-color: var(--clr-primary-yellow);
   border-radius: 10px;
 }
-.content__item__cta:nth-child(1)::after {
-  background-color: var(--clr-primary-red);
+
+.content__item--cherry .title {
+  color: var(--clr-primary-dark-cyan);
+}
+
+.content__item--tangerine .title {
+  color: var(--clr-primary-blue);
+}
+
+.testimonials__title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--clr-neutral-grayish-blue);
+}
+
+.testimonial__name {
+  color: var(--clr-neutral-dark-blue);
+  font-weight: var(--fw-dark);
+}
+
+.testimonial__job {
+  color: var(--clr-neutral-grayish-blue);
+  font-size: 1rem;
+}
+
+.footer {
+  color: var(--clr-primary-dark-cyan);
+}
+
+.footer .logo {
+  fill: var(--clr-primary-dark-cyan);
 }
