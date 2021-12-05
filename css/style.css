@@ -225,3 +225,29 @@ body {
 .content__item__cta {
   margin-bottom: 2em;
 }
+
+/* terminar!! */
+.testimonials {
+  padding: 1em;
+}
+
+.testimonials__title {
+  margin: 2rem 0;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33ch;
+  margin-bottom: 3rem;
+}
+
+.testimonial__photo {
+  border-radius: 50%;
+  transform: scale(50%);
+}
+
+.testimonial__info {
+  margin-bottom: 2rem;
+}
