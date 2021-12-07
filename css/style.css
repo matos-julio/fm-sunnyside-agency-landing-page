@@ -24,7 +24,8 @@ h4,
 p,
 ul,
 li,
-a {
+a,
+img {
   margin: 0;
   padding: 0;
 }
@@ -254,6 +255,12 @@ body {
 
 .testimonial__info {
   margin-bottom: 2rem;
+}
+
+/* img gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* footer */
