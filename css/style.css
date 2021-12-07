@@ -258,6 +258,9 @@ body {
 /* testimonials */
 .testimonials {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonials__title {
