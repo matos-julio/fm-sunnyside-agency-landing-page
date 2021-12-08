@@ -7,6 +7,8 @@ navigation
 02 - Variables
 03 - Typography
 04 - Layout
+05 - Breakpoints
+
 */
 
 /* 01 - Reset */
@@ -187,6 +189,7 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 3em;
 }
 
@@ -234,8 +237,8 @@ body {
   position: relative;
 }
 
-.content__item:nth-child(2),
-.content__item:nth-child(4),
+.content__item--transform,
+.content__item--stand-out,
 .content__item__text {
   padding: 0.5em;
 }
@@ -308,4 +311,104 @@ body {
   display: flex;
   gap: 1em;
   margin-bottom: 2em;
+}
+
+/* 05 - Breakpoints */
+@media (min-width: 62.5rem) {
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    /* justify-content: space-around; */
+    max-width: 100%;
+  }
+
+  .header__menu {
+    display: flex;
+    position: inherit;
+
+    flex-direction: row;
+    gap: 1.5em;
+    padding: 1em;
+    width: max-content;
+    background-color: transparent;
+    color: var(--clr-neutral-white);
+  }
+  .header__menu::before {
+    display: none;
+  }
+
+  .menu__btn {
+    color: var(--clr-neutral-dark-blue);
+    background-color: var(--clr-neutral-white);
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns:
+      repeat(2) 1fr
+      repeat(2) 1fr
+      repeat(2) 1fr;
+  }
+  .content__item--transform {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+  .content__item--egg {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+  content__item--glass {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+  content__item--stand-out {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+  content__item--cherry {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+  .content__item--tangerine {
+    grid-column: 2 / 3;
+    grid-row: 3;
+  }
+
+  .content__item--transform,
+  .content__item--stand-out {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0 6rem;
+    text-align: left;
+  }
+
+  .content__item__cta::after {
+    left: 13%;
+  }
+  .content__item__cta:hover::after,
+  .content__item__cta:focus::after {
+    height: 40px;
+    top: 60%;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns:
+      repeat(3) 1fr
+      repeat(3) 1fr;
+    grid-gap: 2.25rem;
+    justify-content: center;
+  }
+
+  .testimonials__title {
+    grid-column: span 3;
+  }
+
+  .gallery {
+    display: flex;
+  }
 }
