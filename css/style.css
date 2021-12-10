@@ -452,8 +452,7 @@ body {
   }
   .content__item__cta:hover::after,
   .content__item__cta:focus::after {
-    height: 40px;
-    top: 60%;
+    --clr-primary-yellow: hsl(51, 100%, 49%);
   }
 
   .testimonials {
