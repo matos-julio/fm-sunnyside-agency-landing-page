@@ -194,6 +194,9 @@ body {
 }
 
 /* mobile menu */
+.hamburger {
+  padding: 0.5rem;
+}
 .header__menu {
   position: absolute;
   top: 25%;
@@ -216,6 +219,10 @@ body {
   border-left: 40px solid transparent;
   /* border-right: 30px solid transparent; */
   border-bottom: 40px solid var(--clr-neutral-white);
+}
+
+.header__menu.active {
+  display: flex;
 }
 
 .hero__scroll {
